@@ -6,6 +6,8 @@
 
 :root {
     --thick: 1px;
+    --black: #030707;
+    --gray: #E5E5E5;
 }
 
 @font-face {
@@ -30,6 +32,21 @@ h1 {
     font-weight: 100;
 }
 
+nav {
+    font-family: Vaz;
+}
+
+nav a {
+    margin: 0 2.5em;
+    color: #C8C8C8;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: var(--black);
+    font-weight: bolder;
+}
+
 .hr {
     position: absolute;
     pointer-events: none;
@@ -40,7 +57,7 @@ h1 {
     top: 0;
     height: 0;
     width: var(--thick);
-    background: #ddd;
+    background: var(--gray);
     transform: translateX(-50%);
 }
 
@@ -59,7 +76,7 @@ h1 {
 }
 
 .hr.y:nth-child(2) {
-    left: 50%;
+    left: 53%;
     height: 0%;
     animation: yHeight 0.6s linear forwards;
     animation-delay: 1.2s;
