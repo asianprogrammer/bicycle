@@ -36,6 +36,33 @@ nav {
     font-family: Vaz;
 }
 
+nav .logo {
+    font-size: 2em;
+    color: var(--black);
+    font-weight: bolder;
+    width: fit-content;
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+nav .logo span {
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(100%);
+    animation: slideIn 0.4s linear forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%  {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 nav a {
     margin: 0 2.5em;
     color: #C8C8C8;
@@ -45,6 +72,24 @@ nav a {
 nav a.active {
     color: var(--black);
     font-weight: bolder;
+}
+
+nav .navigations {
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(70%);
+    animation: frameIn 1s linear forwards;
+}
+
+@keyframes frameIn {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .hr {
