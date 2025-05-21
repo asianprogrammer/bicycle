@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 2em;
+}
