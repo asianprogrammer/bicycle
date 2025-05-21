@@ -13,6 +13,11 @@
     src: url(./assets/fonts/Fontspring-DEMO-QuantReg.otf);
 }
 
+@font-face {
+    font-family: Vaz;
+    src: url(./assets/fonts/Vazirmatn.ttf);
+}
+
 body {
     margin-top: 4em;
     margin-left: 4em;
