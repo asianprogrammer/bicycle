@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Quant;
+    src: url(./assets/fonts/Fontspring-DEMO-QuantReg.otf);
+}
+
 body {
     margin-top: 4em;
     margin-left: 4em;
     margin-right: 2em;
+}
+
+h1 {
+    font-size: 6em;
+    font-family: Quant;
+    font-weight: 100;
 }
