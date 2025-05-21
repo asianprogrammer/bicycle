@@ -65,7 +65,7 @@ nav .logo span {
 
 nav a {
     margin: 0 2.5em;
-    color: #C8C8C8;
+    color: #4e4e4e;
     text-decoration: none;
 }
 
@@ -80,6 +80,27 @@ nav .navigations {
     transform: translateY(70%);
     animation: frameIn 1s linear forwards;
 }
+
+nav .menu .line {
+    opacity: 0;
+    width: 25px;
+    height: 2px;
+    margin: 3px;
+    background: var(--black);
+    transform: translateX(100%);
+    animation: slideIn .4s linear forwards;
+    animation-delay: 0.3s;
+}
+
+.menu .line:nth-of-type(2) {
+    width: 17px;
+    animation-delay: 0.5s;
+}
+
+.menu .line:nth-of-type(3) {
+    animation-delay: 0.7s;
+}
+
 
 @keyframes frameIn {
     0% {
