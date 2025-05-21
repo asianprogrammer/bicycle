@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --thick: 1px;
+}
+
 @font-face {
     font-family: Quant;
     src: url(./assets/fonts/Fontspring-DEMO-QuantReg.otf);
@@ -19,4 +23,78 @@ h1 {
     font-size: 6em;
     font-family: Quant;
     font-weight: 100;
+}
+
+.hr {
+    position: absolute;
+    pointer-events: none;
+}
+
+.hr.y,
+.hr.x {
+    top: 0;
+    height: 0;
+    width: var(--thick);
+    background: #ddd;
+    transform: translateX(-50%);
+}
+
+.hr.x {
+    left: 0;
+    width: 100vw;
+    height: var(--thick);
+    transform: translateY(-50%);
+}
+
+.hr.y:nth-child(1) {
+    left: 25%;
+    height: 0%;
+    animation: yHeight 0.6s linear forwards;
+    animation-delay: 1s;
+}
+
+.hr.y:nth-child(2) {
+    left: 50%;
+    height: 0%;
+    animation: yHeight 0.6s linear forwards;
+    animation-delay: 1.2s;
+}
+
+.hr.y:nth-child(3) {
+    left: 90%;
+    height: 0%;
+    animation: yHeight 0.5s linear forwards;
+    animation-delay: 1.3s;
+}
+
+.hr.x:nth-of-type(4) {
+    top: 60%;
+    width: 0vw;
+    animation: xWidth 0.6s linear forwards;
+    animation-delay: 1s;
+}
+
+.hr.x:nth-of-type(5) {
+    top: 70%;
+    width: 0vw;
+    animation: xWidth 0.7s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes yHeight {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes xWidth {
+    from {
+        width: 0vw;
+    }
+    to {
+        width: 100vw;
+    }
 }
