@@ -313,12 +313,25 @@ main {
     animation-delay: 2.2s;
 }
 
-@keyframes slideInOnlay {
+@-webkit-keyframes slideInOnlay {
     0% {
-        transform: translateX(120%);
+        -webkit-transform: translateX(120%);
+                transform: translateX(120%);
     }
     100% {
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
+}
+
+@keyframes slideInOnlay {
+    0% {
+        -webkit-transform: translateX(120%);
+                transform: translateX(120%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
