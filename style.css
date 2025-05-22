@@ -34,11 +34,15 @@ h1 {
     line-height: 1.2em;
 }
 
-main p {
+main span {
+    margin: 2em 0;
+    display: block;
+}
+
+main span p {
     color: var(--gray);
     font-size: 1.1em;
     font-family: Vaz;
-    margin: 2em 0;
 }
 
 main button {
@@ -242,14 +246,14 @@ main {
 }
 
 .hr.y:nth-child(1) {
-    left: 25%;
+    left: 30%;
     height: 0%;
     animation: yHeight 0.6s linear forwards;
     animation-delay: 1s;
 }
 
 .hr.y:nth-child(2) {
-    left: 53%;
+    left: 55%;
     height: 0%;
     animation: yHeight 0.6s linear forwards;
     animation-delay: 1.2s;
