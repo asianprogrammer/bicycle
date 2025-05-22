@@ -34,6 +34,32 @@ h1 {
     line-height: 1.2em;
 }
 
+main h1 section {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+main h1 section:nth-of-type(1) div {
+    transform: translateY(100%);
+    animation: frameIn 0.5s linear forwards;
+}
+
+main h1 section:nth-of-type(2) div {
+    transform: translateY(100%);
+    animation: frameIn 0.8s linear forwards;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
 main span {
     margin: 2em 0;
     display: block;
@@ -43,6 +69,24 @@ main span p {
     color: var(--gray);
     font-size: 1.1em;
     font-family: Vaz;
+}
+
+main span p:nth-of-type(1) {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: frameIn .8s linear forwards;
+}
+
+main span p:nth-of-type(2) {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: frameIn 1.2s linear forwards;
+}
+
+main span p:nth-of-type(3) {
+    opacity: 0;
+    transform: translateY(100%);
+    animation: frameIn 1.5s linear forwards;
 }
 
 main button {
