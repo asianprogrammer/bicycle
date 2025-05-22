@@ -378,8 +378,8 @@ main {
     -webkit-transform: rotate(-0deg);
     -ms-transform: rotate(-0deg);
     transform: rotate(-0deg);
-    -webkit-animation: rotate 1.2s linear forwards;
-    animation: rotate 1.2s linear forwards;
+    -webkit-animation: rotate 1.2s ease-out forwards;
+    animation: rotate 1.2s ease-out forwards;
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
 }
