@@ -203,6 +203,7 @@ nav .logo span {
             transform: translateX(100%);
     -webkit-animation: slideIn 0.4s linear forwards;
             animation: slideIn 0.4s linear forwards;
+    animation-delay: 2s;
 }
 
 @-webkit-keyframes slideIn {
@@ -288,8 +289,9 @@ main {
     -webkit-transform: translateX(120%);
         -ms-transform: translateX(120%);
             transform: translateX(120%);
-    -webkit-animation: slideIn 1s linear forwards;
-            animation: slideIn 1s linear forwards;
+    -webkit-animation: slideIn 0.7s linear forwards;
+            animation: slideIn 0.7s linear forwards;
+    animation-delay: 2s;
 }
 
 .bicycle {
@@ -353,6 +355,7 @@ main {
             transform: rotate(-0deg);
     -webkit-animation: rotate 1s linear forwards;
             animation: rotate 1s linear forwards;
+    animation-delay: 2s;
 }
 
 .rim img {
