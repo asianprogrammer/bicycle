@@ -435,7 +435,7 @@ main {
     height: fit-content;
     position: absolute;
     left: 55%;
-    bottom: 25%;
+    bottom: 30%;
     font-family: Vaz;
     z-index: 1111;
     -webkit-transform: translate(-50%, -50%);
