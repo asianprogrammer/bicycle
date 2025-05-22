@@ -157,7 +157,7 @@ main {
     width: fit-content;
     transform-origin: center;
     transform: rotate(-40deg);
-    animation: rotate 1s linear forwards;
+    animation: rotate 1s cubic-bezier(.16,.88,.58,.52) forwards;
 }
 
 .rim img {
