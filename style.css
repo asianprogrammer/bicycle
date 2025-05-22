@@ -8,7 +8,7 @@
 :root {
     --thick: 1px;
     --black: #030707;
-    --gray: #c5c5c5;
+    --gray:#a3a3a3;
 }
 
 @font-face {
@@ -400,10 +400,10 @@ main {
     -webkit-transform: rotate(-0deg);
     -ms-transform: rotate(-0deg);
     transform: rotate(-0deg);
-    -webkit-animation: rotate 1.2s ease-out forwards;
-    animation: rotate 1.2s ease-out forwards;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation: rotate 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+    animation: rotate 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
 }
 
 .rim img {
