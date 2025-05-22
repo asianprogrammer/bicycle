@@ -307,8 +307,8 @@ main {
     -webkit-transform: translateX(120%);
     -ms-transform: translateX(120%);
     transform: translateX(120%);
-    -webkit-animation: slideInOnlay 1s linear forwards;
-    animation: slideInOnlay 1s linear forwards;
+    -webkit-animation: slideInOnlay 1s  cubic-bezier(0.3, 0, 0.3, 1) forwards;
+    animation: slideInOnlay 1s  cubic-bezier(0.3, 0, 0.3, 1) forwards;
     -webkit-animation-delay: 2.2s;
     animation-delay: 2.2s;
 }
