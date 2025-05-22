@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 :root {
@@ -36,28 +37,53 @@ h1 {
 
 main h1 section {
     display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 main h1 section:nth-of-type(1) div {
-    transform: translateY(100%);
-    animation: frameIn 0.5s linear forwards;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: frameIn 0.5s linear forwards;
+            animation: frameIn 0.5s linear forwards;
 }
 
 main h1 section:nth-of-type(2) div {
-    transform: translateY(100%);
-    animation: frameIn 0.8s linear forwards;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: frameIn 0.8s linear forwards;
+            animation: frameIn 0.8s linear forwards;
+}
+
+@-webkit-keyframes slideTop {
+    0% {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+
+    100% {
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
 }
 
 @keyframes slideTop {
     0% {
-        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
     }
 
     100% {
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 }
 
@@ -74,20 +100,29 @@ main span p {
 
 main span p:nth-of-type(1) {
     opacity: 0;
-    transform: translateY(100%);
-    animation: frameIn .8s linear forwards;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: frameIn .8s linear forwards;
+            animation: frameIn .8s linear forwards;
 }
 
 main span p:nth-of-type(2) {
     opacity: 0;
-    transform: translateY(100%);
-    animation: frameIn 1.2s linear forwards;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: frameIn 1.2s linear forwards;
+            animation: frameIn 1.2s linear forwards;
 }
 
 main span p:nth-of-type(3) {
     opacity: 0;
-    transform: translateY(100%);
-    animation: frameIn 1.5s linear forwards;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-animation: frameIn 1.5s linear forwards;
+            animation: frameIn 1.5s linear forwards;
 }
 
 main button {
@@ -102,13 +137,15 @@ main button {
     opacity: 0;
     position: relative;
     background: var(--black);
-    animation: scale 0.7s linear forwards;
+    -webkit-animation: scale 0.7s linear forwards;
+            animation: scale 0.7s linear forwards;
 }
 
-@keyframes scale {
+@-webkit-keyframes scale {
     0% {
         opacity: 0;
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
 
     60% {
@@ -117,7 +154,26 @@ main button {
 
     100% {
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+
+    60% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
 }
 
@@ -129,27 +185,51 @@ nav .logo {
     font-size: 2em;
     color: var(--black);
     font-weight: bolder;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 nav .logo span {
     opacity: 0;
     display: inline-block;
-    transform: translateX(100%);
-    animation: slideIn 0.4s linear forwards;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-animation: slideIn 0.4s linear forwards;
+            animation: slideIn 0.4s linear forwards;
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+    }
 }
 
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
     }
 
     100% {
         opacity: 1;
-        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
     }
 }
 
@@ -167,8 +247,11 @@ nav a.active {
 nav .navigations {
     opacity: 0;
     overflow: hidden;
-    transform: translateY(70%);
-    animation: frameIn 1s linear forwards;
+    -webkit-transform: translateY(70%);
+        -ms-transform: translateY(70%);
+            transform: translateY(70%);
+    -webkit-animation: frameIn 1s linear forwards;
+            animation: frameIn 1s linear forwards;
 }
 
 nav .menu .line {
@@ -177,9 +260,13 @@ nav .menu .line {
     height: 2px;
     margin: 3px;
     background: var(--black);
-    transform: translateX(100%);
-    animation: slideIn .4s linear forwards;
-    animation-delay: 0.3s;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-animation: slideIn .4s linear forwards;
+            animation: slideIn .4s linear forwards;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
 }
 
 main {
@@ -198,8 +285,11 @@ main {
 .product-view {
     width: 100%;
     position: relative;
-    transform: translateX(120%);
-    animation: slideIn 1s linear forwards;
+    -webkit-transform: translateX(120%);
+        -ms-transform: translateX(120%);
+            transform: translateX(120%);
+    -webkit-animation: slideIn 1s linear forwards;
+            animation: slideIn 1s linear forwards;
 }
 
 .bicycle {
@@ -215,8 +305,10 @@ main {
 .bicycle .image img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    object-position: bottom;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
 }
 
 .bicycle .image:nth-of-type(1) {
@@ -233,58 +325,104 @@ main {
     bottom: 0;
     height: 14%;
     overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     position: absolute;
     z-index: 1;
     overflow: hidden;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .rim-rotate {
     height: 150vh;
     aspect-ratio: 1/1;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
-    transform-origin: center;
-    transform: rotate(-40deg);
-    animation: rotate 1s linear forwards;
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+    -webkit-animation: rotate 1s linear forwards;
+            animation: rotate 1s linear forwards;
 }
 
 .rim img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.247));
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.247));
+            filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.247));
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-160deg);
+                transform: rotate(-160deg);
+    }
 }
 
 @keyframes rotate {
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(-160deg);
+        -webkit-transform: rotate(-160deg);
+                transform: rotate(-160deg);
     }
 }
 
 .menu .line:nth-of-type(2) {
     width: 17px;
-    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
 }
 
 .menu .line:nth-of-type(3) {
-    animation-delay: 0.7s;
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+}
+
+
+@-webkit-keyframes frameIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+                transform: translateY(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
 }
 
 
 @keyframes frameIn {
     0% {
         opacity: 0;
-        transform: translateY(70%);
+        -webkit-transform: translateY(70%);
+                transform: translateY(70%);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
     }
 }
 
@@ -299,7 +437,9 @@ main {
     height: 0;
     width: var(--thick);
     background: var(--gray);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .hr.x {
@@ -308,42 +448,64 @@ main {
     width: calc(0vw + 4em);
     position: fixed;
     height: var(--thick);
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
 }
 
 .hr.y:nth-child(1) {
     left: 30%;
     height: 0%;
-    animation: yHeight 0.6s linear forwards;
-    animation-delay: 1s;
+    -webkit-animation: yHeight 0.6s linear forwards;
+            animation: yHeight 0.6s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
 }
 
 .hr.y:nth-child(2) {
     left: 55%;
     height: 0%;
-    animation: yHeight 0.6s linear forwards;
-    animation-delay: 1.2s;
+    -webkit-animation: yHeight 0.6s linear forwards;
+            animation: yHeight 0.6s linear forwards;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
 }
 
 .hr.y:nth-child(3) {
     left: 90%;
     height: 0%;
-    animation: yHeight 0.5s linear forwards;
-    animation-delay: 1.3s;
+    -webkit-animation: yHeight 0.5s linear forwards;
+            animation: yHeight 0.5s linear forwards;
+    -webkit-animation-delay: 1.3s;
+            animation-delay: 1.3s;
 }
 
 .hr.x:nth-of-type(1) {
     width: calc(0vw + 4em);
-    animation: xWidth 0.6s linear forwards;
-    animation-delay: 1s;
+    -webkit-animation: xWidth 0.6s linear forwards;
+            animation: xWidth 0.6s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     margin-top: -1em;
 }
 
 .hr.x:nth-of-type(2) {
     width: calc(0vw + 4em);
-    animation: xWidth 0.7s linear forwards;
-    animation-delay: 1s;
+    -webkit-animation: xWidth 0.7s linear forwards;
+            animation: xWidth 0.7s linear forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
     margin-top: 1em;
+}
+
+@-webkit-keyframes yHeight {
+    from {
+        height: 0%;
+    }
+
+    to {
+        height: 100%;
+    }
 }
 
 @keyframes yHeight {
@@ -353,6 +515,16 @@ main {
 
     to {
         height: 100%;
+    }
+}
+
+@-webkit-keyframes xWidth {
+    from {
+        width: calc(0vw + 4em);
+    }
+
+    to {
+        width: calc(100vw + 4em);
     }
 }
 
