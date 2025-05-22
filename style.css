@@ -300,6 +300,8 @@ main {
 .bicycle .image {
     height: 100%;
     position: absolute;
+    pointer-events: none;
+    user-select: none;
 }
 
 .bicycle .image img {
@@ -331,6 +333,7 @@ main {
     position: absolute;
     z-index: 1;
     overflow: hidden;
+    user-select: none;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
@@ -383,6 +386,28 @@ main {
         -webkit-transform: rotate(-160deg);
                 transform: rotate(-160deg);
     }
+}
+
+.price {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 55%;
+    bottom: 25%;
+    font-family: Vaz;
+    z-index: 1111;
+    transform: translate(-50%, -50%);
+}
+
+.price span {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.price h2 {
+    font-size: 2.5em;
 }
 
 .menu .line:nth-of-type(2) {
