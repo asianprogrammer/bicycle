@@ -105,9 +105,9 @@ main span p:nth-of-type(1) {
     -webkit-transform: translateY(100%);
         -ms-transform: translateY(100%);
             transform: translateY(100%);
-    -webkit-animation: frameIn .8s linear forwards;
-            animation: frameIn .8s linear forwards;
-    animation-delay: 3.4s;
+    -webkit-animation: frameIn 0.8s linear forwards;
+            animation: frameIn 0.8s linear forwards;
+    animation-delay: 3.3s;
 }
 
 main span p:nth-of-type(2) {
@@ -115,9 +115,9 @@ main span p:nth-of-type(2) {
     -webkit-transform: translateY(100%);
         -ms-transform: translateY(100%);
             transform: translateY(100%);
-    -webkit-animation: frameIn 1.2s linear forwards;
-            animation: frameIn 1.2s linear forwards;
-    animation-delay: 3.4s;
+    -webkit-animation: frameIn 0.8s linear forwards;
+            animation: frameIn 0.8s linear forwards;
+    animation-delay: 3.6s;
 }
 
 main span p:nth-of-type(3) {
@@ -125,9 +125,9 @@ main span p:nth-of-type(3) {
     -webkit-transform: translateY(100%);
         -ms-transform: translateY(100%);
             transform: translateY(100%);
-    -webkit-animation: frameIn 1.5s linear forwards;
-            animation: frameIn 1.5s linear forwards;
-    animation-delay: 3.4s;
+    -webkit-animation: frameIn 0.8s linear forwards;
+            animation: frameIn 0.8s linear forwards;
+    animation-delay: 3.8s;
 }
 
 main button {
@@ -190,7 +190,7 @@ nav .logo span {
             transform: translateX(100%);
     -webkit-animation: slideIn 0.4s linear forwards;
             animation: slideIn 0.4s linear forwards;
-    animation-delay: 2s;
+    animation-delay: 2.4s;
 }
 
 @-webkit-keyframes slideIn {
@@ -277,8 +277,8 @@ main {
     -webkit-transform: translateX(120%);
         -ms-transform: translateX(120%);
             transform: translateX(120%);
-    -webkit-animation: slideIn 1.2s linear forwards;
-            animation: slideIn 1.2s linear forwards;
+    -webkit-animation: slideIn 1s linear forwards;
+            animation: slideIn 1s linear forwards;
     animation-delay: 2.2s;
 }
 
@@ -341,8 +341,8 @@ main {
     -webkit-transform: rotate(-0deg);
         -ms-transform: rotate(-0deg);
             transform: rotate(-0deg);
-    -webkit-animation: rotate 1s linear forwards;
-            animation: rotate 1s linear forwards;
+    -webkit-animation: rotate 1.2s linear forwards;
+            animation: rotate 1.2s linear forwards;
     animation-delay: 2s;
 }
 
@@ -502,7 +502,7 @@ main {
             animation: xWidth 0.6s linear forwards;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
-    margin-top: -1em;
+    margin-top: -1.5em;
 }
 
 .hr.x:nth-of-type(2) {
@@ -511,7 +511,7 @@ main {
             animation: xWidth 0.7s linear forwards;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 @-webkit-keyframes yHeight {
