@@ -7,7 +7,7 @@
 :root {
     --thick: 1px;
     --black: #030707;
-    --gray: #E5E5E5;
+    --gray: #c5c5c5;
 }
 
 @font-face {
@@ -28,9 +28,30 @@ body {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 8em;
     font-family: Quant;
-    font-weight: 100;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+main p {
+    color: var(--gray);
+    font-size: 1.1em;
+    font-family: Vaz;
+    margin: 2em 0;
+}
+
+main button {
+    border-radius: 100px;
+    border: none;
+    font-size: 1.1em;
+    padding: 0.8em 2.5em;
+    text-transform: uppercase;
+    font-family: Vaz;
+    font-weight: 400;
+    color: white;
+    position: relative;
+    background: var(--black);
 }
 
 nav {
@@ -157,7 +178,7 @@ main {
     width: fit-content;
     transform-origin: center;
     transform: rotate(-40deg);
-    animation: rotate 1s cubic-bezier(.16,.88,.58,.52) forwards;
+    animation: rotate 1s linear forwards;
 }
 
 .rim img {
@@ -212,10 +233,12 @@ main {
 }
 
 .hr.x {
-    left: 0;
-    width: 100vw;
+    top: auto;
+    left: -4em;
+    width: calc(0vw + 4em);
+    position: fixed;
     height: var(--thick);
-    transform: translateY(-50%);
+    transform: translateY(0%);
 }
 
 .hr.y:nth-child(1) {
@@ -239,18 +262,18 @@ main {
     animation-delay: 1.3s;
 }
 
-.hr.x:nth-of-type(4) {
-    top: 60%;
-    width: 0vw;
+.hr.x:nth-of-type(1) {
+    width: calc(0vw + 4em);
     animation: xWidth 0.6s linear forwards;
     animation-delay: 1s;
+    margin-top: -1em;
 }
 
-.hr.x:nth-of-type(5) {
-    top: 70%;
-    width: 0vw;
+.hr.x:nth-of-type(2) {
+    width: calc(0vw + 4em);
     animation: xWidth 0.7s linear forwards;
     animation-delay: 1s;
+    margin-top: 1em;
 }
 
 @keyframes yHeight {
@@ -264,9 +287,9 @@ main {
 
 @keyframes xWidth {
     from {
-        width: 0vw;
+        width: calc(0vw + 4em);
     }
     to {
-        width: 100vw;
+        width: calc(100vw + 4em);
     }
 }
